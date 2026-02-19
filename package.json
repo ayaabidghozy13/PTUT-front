@@ -1,0 +1,23 @@
+{
+  "version": "1.0.0",
+  "type": "module",
+  "source": "./index.html",
+  "name": "vue-project",
+  "description": "A Vue.js project with Tailwind CSS",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build"
+  },
+  "dependencies": {
+    "vue": "^3.4.21",
+    "vue-router": "^4.6.4"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^5.0.4",
+    "autoprefixer": "^10.4.18",
+    "postcss": "^8.4.35",
+    "tailwindcss": "3.4.16",
+    "typescript": "5.2.2",
+    "vite": "6.0.4"
+  }
+}
