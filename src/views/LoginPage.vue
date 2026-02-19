@@ -25,7 +25,7 @@
     <main class="flex-1 flex items-center justify-center pt-[65px] pb-[97px]">
       <div class="w-full max-w-[448px] px-4">
         <div class="flex justify-center mb-5">
-          <div class="h-10 w-[72.69px] bg-[url(/isis.png)] bg-cover bg-center" />
+          <div class="h-10 w-[72.69px] bg-[url(/isis-2.png)] bg-cover bg-center" />
         </div>
 
         <h1 class="text-2xl font-bold text-[#1c0845] text-center mb-2 [font-family:Plus_Jakarta_Sans,Helvetica] tracking-[-0.60px]">
@@ -48,7 +48,7 @@
                 </label>
                 <div class="relative">
                   <img
-                    src="/svg-2.svg"
+                    src="C:\Users\GIS\Downloads\eya-test-main\eya-test-main\public\SVG.svg"
                     alt="Email icon"
                     class="absolute left-3 top-1/2 -translate-y-1/2 w-5 h-5"
                   />
@@ -67,7 +67,7 @@
               <div class="space-y-2">
                 <div class="relative">
                   <img
-                    src="/vector.svg"
+                    src="C:\Users\GIS\Downloads\eya-test-main\eya-test-main\public\Vector.svg"
                     alt="LockIcon icon"
                     class="absolute left-3 top-1/2 -translate-y-1/2 w-[18px] h-[21px]"
                   />
@@ -105,7 +105,7 @@
               <div class="bg-[#f2f1f480] rounded-xl border border-[#e4e0eb] p-4">
                 <div class="flex items-start gap-3">
                   <img
-                    src="/svg-3.svg"
+                    src="C:\Users\GIS\Downloads\eya-test-main\eya-test-main\public\SVG2.svg"
                     alt="Shield icon"
                     class="w-5 h-5 mt-0.5 flex-shrink-0"
                   />
@@ -139,27 +139,36 @@
       </div>
     </main>
 
-    <footer class="fixed bottom-0 left-0 right-0 h-[97px] bg-[#f2f1f44c] border-t border-[#e4e0eb]">
-      <div class="h-full max-w-[1400px] mx-auto px-[92.4px] flex items-center justify-between">
-        <div class="flex items-center gap-3">
-          <div class="h-8 w-[58.15px] opacity-80 bg-[url(/isis-1.png)] bg-cover bg-center" />
-          <span class="text-sm text-[#5f527a] [font-family:Plus_Jakarta_Sans,Helvetica]">
-            École d'ingénieurs ISIS - INU Champollion
-          </span>
-        </div>
+    <footer class="bg-[#f8f7fa] border-t border-[#e4e0eb] py-10 mt-20">
+  <div class="max-w-[1400px] mx-auto px-[60px]">
+    <div class="flex flex-col md:flex-row items-center justify-between gap-6">
+      
+      <div class="flex items-center gap-5">
+        <img src="/isis-2.png" alt="ISIS" class="h-9 w-auto object-contain" />
+        <img src="/PartINSA-GrisRouge 1.png" alt="INSA" class="h-9 w-auto object-contain" />
+        <img src="/image 1.png" alt="UC" class="h-9 w-auto object-contain" />
+        
+        <div class="h-10 w-[1px] bg-[#e4e0eb] mx-2 hidden md:block"></div>
 
-        <div class="flex items-center gap-2">
-          <img src="/chat4.svg" alt="Chat icon" class="w-6 h-6" />
-          <span class="text-sm text-[#5f527a] [font-family:Plus_Jakarta_Sans,Helvetica]">
-            Contact technique
-          </span>
-        </div>
-
-        <span class="text-sm text-[#5f527a] [font-family:Plus_Jakarta_Sans,Helvetica]">
-          © 2026 Projet FIE-3 - Évaluation des enseignements
+        <span class="text-sm text-[#5f527a] leading-tight font-['Plus_Jakarta_Sans',Helvetica] max-w-[250px]">
+          École d'ingénieurs ISIS partenaire avec INSA - INU Champollion
         </span>
       </div>
-    </footer>
+
+      <div class="flex items-center gap-3">
+        <img src="C:\Users\GIS\Downloads\eya-test-main\eya-test-main\public\chat4.svg" alt="Contact" class="w-5 h-5 opacity-70" />
+        <span class="text-sm text-[#5f527a] font-['Plus_Jakarta_Sans',Helvetica]">
+          Contact technique
+        </span>
+      </div>
+
+      <span class="text-sm text-[#5f527a] font-['Plus_Jakarta_Sans',Helvetica]">
+        © 2026 Projet FIE-3 - Évaluation des enseignements
+      </span>
+      
+    </div>
+  </div>
+</footer>
   </div>
 </template>
 
@@ -175,8 +184,14 @@ const navigationItems = [
 ];
 
 const securityBadges = [
-  { icon: "/svg.svg", text: "Données sécurisées" },
-  { icon: "/svg.svg", text: "Anonymat garanti" },
+  { 
+    icon: "/SVG3.svg", 
+    text: "Données sécurisées" 
+  },
+  { 
+    icon: "/SVG3.svg", 
+    text: "Anonymat garanti" 
+  },
 ];
 
 const email = ref("prenom.nom@etud.univ-jfc.fr");
