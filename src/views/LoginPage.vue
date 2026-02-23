@@ -172,7 +172,7 @@
   </div>
 </template>
 
-<script setup lang="ts">
+<script setup>
 import { ref } from "vue";
 import { useRouter } from "vue-router";
 
@@ -202,7 +202,8 @@ const handleLogin = () => {
   console.log("Login clicked", { email: email.value, consent: consent.value });
 };
 
-const handleNavigation = (route: string) => {
+// Removed the ": string" type annotation here
+const handleNavigation = (route) => {
   router.push(route);
 };
 </script>

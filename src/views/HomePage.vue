@@ -300,7 +300,7 @@ Votre participation est essentielle pour améliorer la qualité des enseignement
   </div>
 </template>
 
-<script setup lang="ts">
+<script setup>
 import { useRouter } from 'vue-router';
 
 const router = useRouter();
@@ -310,7 +310,9 @@ const navigationItems = [
   { label: "Connexion", active: false, route: "/login" },
 ];
 
-const handleNavigation = (route: string) => {
+// Removed the ": string" type annotation
+const handleNavigation = (route) => {
   router.push(route);
 };
 </script>
+

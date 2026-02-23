@@ -16,6 +16,7 @@ const routes = [
 ];
 
 const router = createRouter({
+  // In JS, we don't need to define types for the history object
   history: createWebHistory(),
   routes,
 });
